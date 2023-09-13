@@ -1,0 +1,169 @@
+---
+title: "HW-1 R"
+author: "Vinu Kevin Diesel"
+format: html
+editor: visual
+---
+
+## Finding the current version of R
+```{r}
+R.version
+```
+
+
+
+```{r}
+install.packages("DMwR2")
+```
+
+
+
+```{r}
+help(package="DMwR2")
+```
+
+
+
+```{r}
+library(DMwR2)
+```
+
+
+
+```{r}
+data(algae) # load algae dataset
+algae  
+```
+
+
+
+```{r}
+manyNAs(algae) # find rows with too many NAs
+```
+
+
+
+```{r}
+library()
+```
+
+
+
+```{r}
+(.packages())
+```
+
+
+
+```{r}
+install.packages("dbplyr") # assuming you have dbplyr installed before 
+
+# now you try to check out dplyr, but typed dbplyr by accident
+library(dbplyr) 
+(.packages())
+# you realized the mistake, and you don't want this package to be live in this session due to potential conflicts
+# you can detach the package
+detach("package:dbplyr", unload=TRUE) 
+(.packages())
+    
+library(dplyr)#load wanted library
+```
+
+
+
+```{r}
+installed.packages() 
+
+```
+
+
+
+```{r}
+old.packages()
+```
+
+
+
+```{r}
+update.packages()
+```
+
+
+
+```{r}
+update.packages(ask = FALSE)
+```
+
+
+
+```{r}
+mean
+```
+
+
+
+```{r}
+help(mean)
+```
+
+
+```{r}
+RSiteSearch('neural networks')
+```
+
+
+```{r}
+#useful controls in R Studio#
+#Ctrl+1  Move focus to the Source Editor.
+#Ctrl+2  Move focus to the Console.
+#Ctrl+l  Clear the Console.
+#Esc     Interrupt R.
+```
+
+
+```{r}
+save(my.function, mydataset, file="path_to_mysession.RData")
+load("path_to_mysession.RData")
+
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+
+```
+
